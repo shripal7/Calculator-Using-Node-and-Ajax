@@ -1,1 +1,5 @@
-# Calculator-Using-Node-and-Ajax-
+
+npm install //for installing module dependencies
+
+npm start //Starts the server
+

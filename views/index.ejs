@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./javascripts/operations.js"></script>
+  <body>
+    <h1><%= title %></h1>
+
+    <div>
+        <div>
+        <label class="col-sm-4 col-md-4 col-lg-4">Enter first Number</label>
+        <div class="col-sm-8 col-md-8 col-lg-8">
+            <input  placeholder="First Number" id="firstNum" required type="number" maxlength="10"></input>
+
+            </div>
+        </div>
+        <div>
+
+                <label class="col-sm-4 col-md-4 col-lg-4">Enter second Number</label>
+            <div class="col-sm-8 col-md-8 col-lg-8">
+            <input placeholder="Second Number" id="secondNum" required type="number" maxlength="10"></input>
+            </div>
+            <div>
+            <button id="adder" type="submit" onclick="adder()" method="POST">Add</button>
+            <button id="subtract" type="submit" onclick="subtract()" method="POST">Subtract</button>
+            <button id="divide" type="submit" onclick="divide()" method="POST">Divide</button>
+            <button id="multiply" type="submit" onclick="multiply()" method="POST">Multiply</button>
+
+    </div>
+    <div id="answer" name="answer"></div>
+
+  </body>
+</html>
